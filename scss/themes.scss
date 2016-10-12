@@ -30,7 +30,7 @@ a {
 li {
     list-style: none;
 }
-//Все, что внутри(имеется ввиду центральная вертикальная колона, отцентрованная)
+//Все, что внутри(имеется ввиду центральная вертикальная колона, отцентрованная с контентом)
 .mainWidth {
     width: 72%;
     margin: 0 auto;
@@ -43,16 +43,14 @@ li {
 }
 
 
-//TOP CONTAINER 
+//TOP 1st CONTAINER 
 
 .container1 {
-    width: 100%;
     background: #363636;
     color: #fff;
-    height: 700px;
+    //height: 700px;
 }
 header {
-    height: 100px;
     background: #e74c3c;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -81,51 +79,25 @@ header {
     & li {
     display: inline-block;
     margin-right: 1%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-    height: 100%;
+        &:last-child {
+            margin-right: 0;
+        }
+    padding: 40px 20px;
     border: 1px solid transparent;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
         &:hover {
             background: rgba(255, 255, 255, .2);
             border: 1px solid #fff;
+            border-bottom-color: transparent;
+            border-top-color: transparent;
         }
         &:active {
             background: rgba(255, 255, 255, .4);
             border: 1px solid #fff;
-        }
-    }
-}
-.container1 {
-    h1 {
-    margin: 180px auto 0;
-    text-align: center;
-    font: 3em OpenSans-CondLight, sans-serif;
-    }
-    p {
-        width: 64.39%;
-        margin: 0 auto;
-        line-height: 1.2em;
-        margin-top: 20px;
-    }
-    button {
-        margin: 0 auto;
-        background: rgba(255, 255, 255, .1);
-        display: block;
-        margin: 0 auto;
-        margin-top: 50px;
-        width: 21.95%;
-        height: 50px;
-        color: #fff;
-        border: 1px solid #fff;
-        //margin-bottom: 160px;   
-        outline: none;
-        &:active {
-            background: rgba(255, 255, 255, .7);
-            -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            -o-transform: scale(1.1);
-            transform: scale(1.1);
+            border-bottom-color: transparent;
+            border-top-color: transparent;
         }
     }
 }
@@ -133,107 +105,35 @@ header {
 //CONTAINER2 (white)
 
 .container2 {
-    height: 360px;
-    width: 100%;
     background: #fff;
     font-size: 0.857em;
-    
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.blockCont2 {
-    width: 45%;
-    display: inline-block;
-    margin-top: 100px;
-    float: left;
-  //  border: 1px solid red;
-    margin-right: 20px;
-    & h3 {
-        font-weight: bold;
-        font-size: 1.571em;
-    }
-    span {
-        color: #e74c3c;
-    }
-    p {
-        
-    }
-}
-
-
-//CONTAINER3 9(red)
+//CONTAINER3 (red)
 .container3 {
     background: #db574a;
-    height: 300px;
-    & h2 {
-        display: block;
-        text-align: center;
-        line-height: 4em;
-        margin-top: 50px;
-        font-size: 2.375em;
-    }
-}
-.blockCont3 {
-    text-align: center;
-    float: left;
-    width: 23%;
-    margin-right: 2%;
-    //margin-top: 20px;
-    & img {
-        margin: 0 auto;
-        cursor: pointer;
-    }
+    padding-top: 50px;
+    padding-bottom: 55px;
+    
 }
 
 //CONTAINER4 (white)
 .container4 {
-    height: 408px;
-    text-align: center;
-}
-.ourProj {
-    margin-top: 100px;
-    & div {
-        float: right;
-    }
-    & span {
-        font-weight: bold;
-    }
-    & #our {
-    float: left;
-    }
-    img {
-        cursor: pointer;
-    }
-}
-#proj { 
-    color: #e74c3c
-}
-.blocksForProj {
-    height: 130px;
-    margin-top: 20px;
-    overflow: hidden;
-    & ul {
-        width: 9999px;
-    }
-}
-.blocksCont4 {
-    float: left;
-    margin-right: .5%;
-    & img {
-        height: 130px;
-    }
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #fff;
 }
 
-
-//CONTAINER5
+//CONTAINER5 (black)
 
 
 .container5 {
     background: #000;
     height: 230px;
     color: #fff;
-    & span span {
-        color: #e74c3c;
-    }
+    
 }
 .blockCont5 {
     font-size: .9em;
@@ -241,6 +141,9 @@ header {
     float: left;
     margin-top: 33px;
     margin-right: 2%;
+    & span span {
+        color: #e74c3c;
+    }
 }
 .innerBlockCont5 {
     margin-top: 25px;
@@ -267,6 +170,250 @@ header {
         cursor: pointer;
     }
 }
+
+
+
+/*****************************************/
+/**************CONTENT********************/
+/*****************************************/
+
+//>--------<//
+//HOME PAGE//
+//>-------<//
+
+//CONTENT for Container 1 Home page
+
+.contentHomeCont1 {
+    padding-top: 175px;
+    padding-bottom: 160px;
+    h1 {
+    text-align: center;
+    font: 3em OpenSans-CondLight, sans-serif;
+    }
+    p {
+        width: 64.39%;
+        margin: 0 auto;
+        line-height: 1.2em;
+        margin-top: 20px;
+    }
+    button {
+        margin: 0 auto;
+        background: rgba(255, 255, 255, .1);
+        display: block;
+        margin-top: 50px;
+        width: 21.95%;
+        height: 50px;
+        color: #fff;
+        border: 1px solid #fff;  
+        outline: none;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        &:hover {
+            -webkit-opacity: .8;
+            -moz-opacity: .8;
+            -ms-opacity: .8;
+            -o-opacity: .8;
+            opacity: .8;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        &:active {
+            background: rgba(255, 255, 255, .7);
+            
+        }
+    }
+}
+
+
+
+// CONTENT Container 2 HOME page 
+
+.blockCont2 {
+    line-height: 1.2em;
+    width: 45%;
+    float: left;
+    &:last-child {
+        margin-left: 5%;
+    }
+    & h3 {
+        font-weight: bold;
+        font-size: 1.571em;
+    }
+    span {
+        color: #e74c3c;
+    }
+}
+
+
+//CONTENT for container 3 home page (white)
+
+ .contentHomeCont3 {
+     color: rgba(255, 255, 255, .7);
+     & h2 {
+        text-align: center;
+        font-size: 2.375em;
+    }
+}
+.blockCont3 {
+    text-align: center;
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+    margin-top: 50px;
+    & img {
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+//CONTENT for container 4 home page (white)
+
+.contentHomeCont4 {
+    overflow: hidden;
+}
+.ourProj {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    & div {
+        float: right;
+     }
+    & p {
+        float: left;
+        font-weight: bold;
+     }
+    & span {
+        color: #e74c3c;
+    }
+    img {
+        cursor: pointer;
+    }
+}
+.blocksForCont4Home {
+    margin-top: 20px;
+    height: auto;
+    max-height: 160px;
+    width: 1000%;
+}
+.blocksCont4 {
+    float: left;
+    width: 2.35%;
+    height: 160px;
+    margin-right: 0.2%;
+    text-align: center;
+    position: relative;
+    & img {
+        width: 100%;
+        max-height: 130px;
+        height: auto;
+    }
+    & span {
+        //line-height: 2em;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        right: 20%;
+    }
+}
+
+
+
+
+
+
+
+
+/****************************************/
+/****************************************/
+/*********** ABOUT PAGE *****************/
+/****************************************/
+/****************************************/
+/****************************************/
+
+// ABOUT CONTAINER 1
+
+.contentAboutCont1  {
+    color: rgba(255, 255, 255, .5);
+    height: 140px;
+    & a {
+        text-decoration: underline;
+        color: rgba(255, 255, 255, .5);
+    }
+    & span {
+         line-height: 15em;
+    }
+}
+
+// ABOUT CONTAINER 2
+
+.contentAboutCont2 {
+    margin: 100px 0;
+    color: rgba(0, 0, 0, .9);
+    line-height: 1.1em;
+    h3 {
+        font-weight: bold;
+        font: 1.2em OpenSansRegular sans-serif;
+    }
+    .block1AboutCont2 {
+        width: 74.5%;
+        float: left;
+    }
+    .block2AboutCont2 {
+        width: 25%;
+        float: right;
+        & li {
+            list-style: square;
+            color: #e74c3c;
+        }
+        & span {
+            color: rgba(0, 0, 0, .9);
+        }
+    }
+}
+
+// ABOUT CONTAINER 3
+
+.contentAboutCont3 {
+    margin: 50px 0;
+    color: rgba(255, 255, 255, .7);
+    & h2 {
+        text-align: center;
+    }
+    & div {
+        margin-bottom: 60px;
+    }
+    & div div {
+        width: 25%;
+        float: left;
+    }
+}
+
+// ABOUT CONTAINER 4
+
+.contentAboutCont4 {
+    margin: 100px 0;
+    text-align: left;
+    & div {
+        float: left;
+        width: 48%;
+        &:last-child {
+            margin-left: 2%;
+        }
+    }
+    & h4 {
+        color: #e74c3c;
+    }
+}
+
+
+
 
 /*************animations*******************/
 
