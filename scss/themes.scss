@@ -61,10 +61,9 @@ header {
     user-select: none;
     
 }
-.showerTopMenu {
+.menuShower {
     display: none;
 }
-
 .topSearch {
     margin-left: 2.1%;
     margin-top: 20px;
@@ -78,16 +77,16 @@ header {
 .topMenu {
     text-align: right;
     & li {
-        display: inline-block;
-        margin-right: 1%;
+    display: inline-block;
+    margin-right: 1%;
         &:last-child {
             margin-right: 0;
         }
-        padding: 40px 20px;
-        border: 1px solid transparent;
-        -webkit-transition: all .25s ease-in-out;
-        -o-transition: all .25s ease-in-out;
-        transition: all .25s ease-in-out;
+    padding: 40px 20px;
+    border: 1px solid transparent;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
         &:hover {
             background: rgba(255, 255, 255, .2);
             border: 1px solid #fff;
@@ -102,7 +101,6 @@ header {
         }
     }
 }
-
 
 //CONTAINER2 (white)
 
@@ -327,6 +325,11 @@ header {
 
 
 
+
+
+
+
+
 /****************************************/
 /****************************************/
 /*********** ABOUT PAGE *****************/
@@ -414,200 +417,8 @@ header {
 
 /*************animations*******************/
 
-
-/******************************************/
 /*************media-queries***************/
-/****************************************/
 
-@media only screen and (max-width: 963px) {
+@media only screen and (max-width: 1000px) {
     
-    //CONTAINER1
-    
-      .contentHomeCont1 {
-        & button {
-            width: 40%;
-        }
-
-    }
-    //CONTAINER2
-    .contentHomeCont2 {
-        & h3 {
-            font-size: 1.4em;
-        }
-    }
-
-//CONTAINER5
-    .container5 {
-        padding-bottom: 50px;
-        height: 260px;
-    }
-}
-
-@media only screen and (max-width: 860px) {
-    
-    //CONTAINER1
-    header {
-        position: relative;
-    }
-    .showerTopMenu {
-        position: absolute;
-        top: 40px;
-        right: 20px;
-        display: block;
-        font-size: 1.4em;
-        -webkit-transition: all .4s ease-in-out;
-        -o-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
-        & img {
-            float: left;
-            -webkit-opacity: .5;
-            -moz-opacity: .5;
-            -ms-opacity: .5;
-            -o-opacity: .5;
-            opacity: .5;
-        }
-        & span {
-            line-height: 1.5em;
-        }
-        &:hover {
-            cursor: pointer;
-            color: #fff;
-            -webkit-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            -o-transform: scale(1.2);
-            transform: scale(1.2);
-        }
-    }
-    .topMenu {
-        margin-left: 45%;
-        width: 30%;
-        display: none;
-        -webkit-transition: all 2s ease-in-out;
-        -o-transition: all 2s ease-in-out;
-        transition: all 2s ease-in-out;
-        & li {
-            display: block;
-            padding: 20px 20px;
-            &:hover {
-                border-top: 1px solid #fff;
-                border-bottom: 1px solid #fff;
-            }
-        }
-    }
-  .openedMenu {
-    display: block;
-}
- 
-    
-    //CONTAINER5
-    .blockCont5:nth-child(1), .blockCont5:nth-child(4) {
-        width: 48%;
-    }
-    .blockCont5:nth-child(2), .blockCont5:nth-child(3) {
-        display: none;
-    }
-}    
-
-@media only screen and (max-width: 550px) {
-    .mainWidth {
-        width: 90%;
-    }
-    //CONTAINER1
-    .topSearch {
-        & img {
-           display: none; 
-        }
-        & span {
-            display: none;
-        }
-    }
-    header {
-        background: #e74c3c;
-        height: 50px;
-        position: inherit;
-    }
-    .showerTopMenu {
-        position: inherit;
-        width: 20px;
-        font-size: 2.1em;
-        margin-bottom: 0;
-        & img {
-            margin-top: 10px;
-            margin-left: 33%;
-        }
-        &:hover {
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            -o-transform: scale(1);
-            transform: scale(1);
-        }
-    }
-    .contentHomeCont1 {
-        margin-top: 50px;
-        & h1 {
-            font-size: 2em;
-        }
-    }
-    .showerTopMenu {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .topMenu {
-        //border: 1px solid #fff;
-        width: 100%;
-        margin-left: 0;
-        & li {
-            padding-left: 5%;
-            text-align: center;
-            width: 100%;
-            &:hover {
-                background: rgba(255, 255, 255, .4);
-            }
-        }
-    }
-    //CONTAINER2
-    .contentHomeCont2 {
-        & h3 {
-            font-size: 1.4em;
-        }
-    }
-    .blockCont2 {
-        clear: both;
-        margin: 0;
-        width: 100%;
-        &:last-child {
-            margin: 0;
-            margin-top: 20px;
-        }
-        & h3 {
-            text-align: center;
-        }
-    }
-    //CONTAINER3 
-
-    .contentHomeCont3 {
-        & h2 {
-            font-size: 2.2em;
-        }
-        & span {
-            display: none;
-        }
-    }
-//CONTAINER5
-    .container5 {
-        padding-bottom: 50px;
-        height: 260px;
-    }
-    .blockCont5 {
-        &:first-child {
-            display: none;
-        }
-        &:last-child {
-            margin-left: 30%;
-            //border: 1px solid #fff;
-        }
-        & span {
-            display: inline-block;
-        }
-    }
 }
