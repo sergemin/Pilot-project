@@ -48,11 +48,12 @@ li {
 .container1 {
     background: #363636;
     color: #fff;
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 header {
     background: #e74c3c;
-    padding-top: 20px;
-    padding-bottom: 20px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -76,8 +77,8 @@ header {
 .topMenu {
     text-align: right;
     & li {
-    display: inline-block;
-    margin-right: 1%;
+        display: inline-block;
+        margin-right: 1%;
         &:last-child {
             margin-right: 0;
         }
@@ -98,6 +99,23 @@ header {
             border-bottom-color: transparent;
             border-top-color: transparent;
         }
+    }
+}
+
+.topMenuShower {
+    display: none;
+    cursor: pointer;
+    & img {
+        float: left;
+        filter: alpha(Opacity=75);
+        -webkit-opacity: .4;
+        -moz-opacity: .4;
+        -ms-opacity: .4;
+        -o-opacity: .4;
+        opacity: .4;
+    }
+    & span {
+        line-height: 1.3em;
     }
 }
 
@@ -130,7 +148,8 @@ header {
 
 .container5 {
     background: #000;
-
+    padding-top: 33px;
+    padding-bottom: 33px;
     color: #fff;
     
 }
@@ -138,7 +157,6 @@ header {
     font-size: .9em;
     width: 23%;
     float: left;
-    margin-top: 33px;
     margin-right: 2%;
     & span span {
         color: #e74c3c;
@@ -178,5 +196,63 @@ header {
 /****************************************/
 
 @media only screen and (max-width: 1000px) {
+    //Container5 (the last one)
     
+    .blockCont5 {
+        width: 31%;
+        &:nth-child(3) {
+            display: none;
+        }
+        &:first-child {
+            margin-left: 1%;
+        }
+        &:last-child {
+            margin-top: 1%;
+        }
+    }
 }
+
+@media only screen and (max-width: 860px) {
+    header {
+        position: relative;
+    }
+    .topMenu {
+        display: none;
+        position: absolute;
+        right: 22%;
+        top: 30%;
+        width: 33%;
+        background: rgba(255, 255, 255, .3);
+        & li {
+            margin-right: 0;
+            display: block;
+            padding: 10px 0;
+            text-align: center;
+            -webkit-transition: width .6s ease-in-out, 
+                height .6s ease-in-out .6s;
+            -o-transition: width .6s ease-in-out, 
+                height .6s ease-in-out .6s;
+            transition: width .6s ease-in-out, 
+                height .6s ease-in-out .6s;
+            }
+        }
+    }
+.topMenuShower {
+    display: block;
+    width: 20%;
+    font: 1.4em Verdana sans-serif;
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    border: 1px solid #fff;
+}
+    .topMenuChanger {
+        display: block;
+        -webkit-transition: width .6s ease-in-out, 
+                height .6s ease-in-out .6s;
+        -o-transition: width .6s ease-in-out, 
+                height .6s ease-in-out .6s;
+        transition: width .6s ease-in-out, 
+                height .6s ease-in-out .6s;
+}
+

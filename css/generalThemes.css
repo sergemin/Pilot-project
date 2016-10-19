@@ -34,12 +34,13 @@ li {
 
 .container1 {
   background: #363636;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
 
 header {
   background: #e74c3c;
-  padding-top: 20px;
-  padding-bottom: 20px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -81,6 +82,20 @@ header {
       border-bottom-color: transparent;
       border-top-color: transparent; }
 
+.topMenuShower {
+  display: none;
+  cursor: pointer; }
+  .topMenuShower img {
+    float: left;
+    filter: alpha(Opacity=75);
+    -webkit-opacity: .4;
+    -moz-opacity: .4;
+    -ms-opacity: .4;
+    -o-opacity: .4;
+    opacity: .4; }
+  .topMenuShower span {
+    line-height: 1.3em; }
+
 .container2 {
   background: #fff;
   font-size: 0.857em;
@@ -99,14 +114,14 @@ header {
 
 .container5 {
   background: #000;
-  height: 230px;
+  padding-top: 33px;
+  padding-bottom: 33px;
   color: #fff; }
 
 .blockCont5 {
   font-size: .9em;
   width: 23%;
   float: left;
-  margin-top: 33px;
   margin-right: 2%; }
   .blockCont5 span span {
     color: #e74c3c; }
@@ -132,3 +147,51 @@ header {
     height: 10px;
     margin-right: 8%;
     cursor: pointer; }
+
+/******************************************/
+/*************media-queries***************/
+/****************************************/
+@media only screen and (max-width: 1000px) {
+  .blockCont5 {
+    width: 31%; }
+    .blockCont5:nth-child(3) {
+      display: none; }
+    .blockCont5:first-child {
+      margin-left: 1%; }
+    .blockCont5:last-child {
+      margin-top: 1%; } }
+@media only screen and (max-width: 860px) {
+  header {
+    position: relative; }
+
+  .topMenu {
+    display: none;
+    position: absolute;
+    right: 22%;
+    top: 30%;
+    width: 33%;
+    background: rgba(255, 255, 255, 0.3); }
+    .topMenu li {
+      margin-right: 0;
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+      -webkit-transition: width .6s ease-in-out,  height .6s ease-in-out .6s;
+      -o-transition: width .6s ease-in-out,  height .6s ease-in-out .6s;
+      transition: width .6s ease-in-out,  height .6s ease-in-out .6s; } }
+.topMenuShower {
+  display: block;
+  width: 20%;
+  font: 1.4em Verdana sans-serif;
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  border: 1px solid #fff; }
+
+.topMenuChanger {
+  display: block;
+  -webkit-transition: width .6s ease-in-out,  height .6s ease-in-out .6s;
+  -o-transition: width .6s ease-in-out,  height .6s ease-in-out .6s;
+  transition: width .6s ease-in-out,  height .6s ease-in-out .6s; }
+
+/*# sourceMappingURL=generalThemes.css.map */
