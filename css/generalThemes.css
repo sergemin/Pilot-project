@@ -198,11 +198,60 @@ header {
     position: absolute;
     top: 30%;
     right: 10px; }
+    .topMenuShower:hover {
+      background: transparent;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1); }
 
   .blockCont5 {
     margin: 0 1%;
     width: 48%; }
     .blockCont5:nth-child(2) {
       display: none; } }
+@media only screen and (max-width: 640px) {
+  header {
+    display: inherit;
+    height: 70px;
+    position: relative; }
+
+  .topSearch {
+    display: none; }
+
+  .topMenuShower {
+    display: inherit;
+    position: inherit;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0; }
+    .topMenuShower img {
+      margin-left: 40%;
+      margin-top: 20px; }
+    .topMenuShower span {
+      line-height: 3.2em; }
+
+  .topMenu {
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 20%;
+    position: absolute;
+    top: 20px;
+    right: 0; } }
+@media only screen and (max-width: 480px) {
+  .blockCont5:first-child {
+    display: none; }
+
+  .blockCont5:last-child {
+    width: 100%;
+    text-align: center; }
+
+  .bottomImg {
+    margin: 0 auto;
+    width: 40%;
+    height: 15px; }
+    .bottomImg img {
+      margin-left: 8%; } }
 
 /*# sourceMappingURL=generalThemes.css.map */

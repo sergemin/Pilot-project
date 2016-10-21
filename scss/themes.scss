@@ -261,6 +261,13 @@ header {
     position: absolute;
     top: 30%;
     right: 10px;
+        &:hover {
+            background: transparent;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
     }
     
     
@@ -273,6 +280,62 @@ header {
         width: 48%;
         &:nth-child(2) {
             display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    //container1 
+    header {
+        display: inherit;
+        height: 70px;
+        position: relative;
+    }
+    .topSearch {
+        display: none;
+    }
+    .topMenuShower {
+        display: inherit;
+        position: inherit;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        & img {
+            margin-left: 40%;
+            margin-top: 20px;
+        }
+        & span {
+            line-height: 3.2em;
+        }
+    }
+    .topMenu {
+        margin-top: 50px;
+        width: 100%;
+        margin-left: 20%;
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    //container5 
+    
+    .blockCont5:first-child {
+        display: none;
+    }
+    .blockCont5:last-child {
+        width: 100%;
+        text-align: center;
+    }
+    .bottomImg {
+        margin: 0 auto;
+        //border: 1px solid #fff;
+        width: 40%;
+        height: 15px;
+        & img {
+            margin-left: 8%;
         }
     }
 }
