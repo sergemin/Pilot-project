@@ -176,6 +176,9 @@ header {
     top: 30%;
     width: 33%;
     background: rgba(255, 255, 255, 0.3);
+    -webkit-animation: menuOpen860  1.5s ease-in-out;
+    -o-animation: menuOpen860  1.5s ease-in-out;
+    animation: menuOpen860  1.5s ease-in-out;
     -webkit-transition: width .6s ease-in-out,  height .6s ease-in-out .6s;
     -o-transition: width .6s ease-in-out,  height .6s ease-in-out .6s;
     transition: width .6s ease-in-out,  height .6s ease-in-out .6s; }
@@ -205,6 +208,23 @@ header {
       -o-transform: scale(1.1);
       transform: scale(1.1); }
 
+  @keyframes menuOpen860 {
+    from {
+      width: 0;
+      height: 0;
+      right: 60%;
+      -webkit-opacity: 0;
+      -moz-opacity: 0;
+      -ms-opacity: 0;
+      -o-opacity: 0;
+      opacity: 0; }
+    to {
+      width: 33%;
+      -webkit-opacity: 1;
+      -moz-opacity: 1;
+      -ms-opacity: 1;
+      -o-opacity: 1;
+      opacity: 1; } }
   .blockCont5 {
     margin: 0 1%;
     width: 48%; }
@@ -238,7 +258,26 @@ header {
     margin-left: 20%;
     position: absolute;
     top: 20px;
-    right: 0; } }
+    right: 0;
+    -webkit-animation: menuOpen640 1.5s ease-in-out;
+    -o-animation: menuOpen640 1.5s ease-in-out;
+    animation: menuOpen640 1.5s ease-in-out; } }
+@keyframes menuOpen640 {
+  from {
+    width: 0;
+    height: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0; }
+  to {
+    width: 100%;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1; } }
 @media only screen and (max-width: 480px) {
   .blockCont5:first-child {
     display: none; }
