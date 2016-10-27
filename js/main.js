@@ -27,5 +27,19 @@
         topMenu.classList.remove('topMenuChanger');
     })
 
+    // Buttons for home page 4th
+    
+    var ourProj = document.querySelector('.buttonsOurProj');
+    
+    ourProj.addEventListener('click', function(event) {
+        var target = event.target;
+       if(target.tagName != 'IMG') return;
+        var sizeTape = 10%;
+        var blocksForCont4Home = document.querySelector('.blocksForCont4Home');
+        
+        blocksForCont4Home.setAttribute('style', 'margin-left:'+sizeTape);
+        sizeTape += sizeTape;
+        
+    });
     
 })();

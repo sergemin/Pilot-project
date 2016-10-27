@@ -88,7 +88,10 @@
   margin-top: 20px;
   height: auto;
   max-height: 160px;
-  width: 1000%; }
+  width: 1000%;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
 
 .blocksCont4 {
   float: left;
@@ -106,3 +109,9 @@
     bottom: 0;
     text-align: center;
     right: 20%; }
+
+@media only screen and (max-width: 1000px) {
+  .contentHomeCont1 button {
+    width: 35%; } }
+
+/*# sourceMappingURL=homeThemes.css.map */
