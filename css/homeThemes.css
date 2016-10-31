@@ -113,5 +113,32 @@
 @media only screen and (max-width: 1000px) {
   .contentHomeCont1 button {
     width: 35%; } }
+@media only screen and (max-width: 640px) {
+  .blockCont2:first-child {
+    width: 100%; }
+    .blockCont2:first-child h3 {
+      text-align: center; }
+    .blockCont2:first-child p {
+      text-indent: 5%;
+      line-height: 1.4em; }
+
+  .blockCont2:last-child {
+    display: none; }
+
+  .blockCont3 {
+    width: 48%; }
+
+  .blocksCont4 {
+    width: 4.8%; }
+    .blocksCont4 span {
+      text-align: center; } }
+@media only screen and (max-width: 480px) {
+  .contentHomeCont1 {
+    padding-top: 150px;
+    padding-bottom: 70px; }
+    .contentHomeCont1 p {
+      width: 100%; }
+    .contentHomeCont1 button {
+      width: 50%; } }
 
 /*# sourceMappingURL=homeThemes.css.map */

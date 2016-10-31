@@ -150,3 +150,54 @@
         }
     }
 }
+
+@media only screen and (max-width: 860px) {
+    //container2
+    
+    
+}
+
+@media only screen and (max-width: 640px) {
+   // container2
+    .blockCont2:first-child {
+        width: 100%;
+        & h3 {
+            text-align: center;
+        }
+        & p {
+            text-indent: 5%;
+            line-height: 1.4em;
+        }
+    }
+    .blockCont2:last-child {
+        display: none;
+    }
+    
+    //container3
+    .blockCont3 {
+        width: 48%;
+    }
+    
+    //container4 
+    .blocksCont4 {
+        width: 4.8%;
+        & span {
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    //container1 
+    .contentHomeCont1 {
+        padding-top: 150px;
+        padding-bottom: 70px;
+        & p {
+            width: 100%;
+        }
+        & button {
+            width: 50%;
+        }
+    }
+    
+}

@@ -170,8 +170,8 @@ header {
     position: relative; }
 
   .topMenu {
-    display: none;
     position: absolute;
+    display: none;
     right: 22%;
     top: 30%;
     width: 33%;
@@ -179,9 +179,9 @@ header {
     -webkit-animation: menuOpen860  1.5s ease-in-out;
     -o-animation: menuOpen860  1.5s ease-in-out;
     animation: menuOpen860  1.5s ease-in-out;
-    -webkit-transition: width .6s ease-in-out,  height .6s ease-in-out .6s;
-    -o-transition: width .6s ease-in-out,  height .6s ease-in-out .6s;
-    transition: width .6s ease-in-out,  height .6s ease-in-out .6s; }
+    -webkit-transition: width .6s ease-in-out,  height 1.6s ease-in-out .6s;
+    -o-transition: width .6s ease-in-out,  height 1.6s ease-in-out .6s;
+    transition: width .6s ease-in-out,  height 1.6s ease-in-out .6s; }
     .topMenu li {
       margin-right: 0;
       display: block;
@@ -189,10 +189,7 @@ header {
       text-align: center; }
 
   .topMenu.topMenuChanger {
-    display: block;
-    -webkit-transition: width .9s ease-in-out,  height .9s ease-in-out 1.5s;
-    -o-transition: width .9s ease-in-out,  height .9s ease-in-out 1.5s;
-    transition: width .9s ease-in-out,  height .9s ease-in-out 1.5s; }
+    display: block; }
 
   .topMenuShower {
     display: block;
