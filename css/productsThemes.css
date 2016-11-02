@@ -1,0 +1,28 @@
+.topMenu a:nth-child(2) li {
+  background: rgba(255, 255, 255, 0.2); }
+
+.contentAboutCont1 {
+  padding-top: 100px;
+  padding-bottom: 10px; }
+  .contentAboutCont1 a {
+    text-decoration: underline; }
+
+.blockCont2Prod {
+  width: 48%;
+  margin: 5px 1%;
+  margin-top: 15px;
+  float: left; }
+  .blockCont2Prod h1 {
+    font: 1.4em Arial, Helvetica, sans-serif;
+    font-weight: bold; }
+  .blockCont2Prod span {
+    color: #e74c3c; }
+  .blockCont2Prod p {
+    line-height: 1.3em; }
+  .blockCont2Prod img {
+    width: 48%;
+    margin: 0 1%;
+    float: left;
+    max-height: 130px; }
+
+/*# sourceMappingURL=productsThemes.css.map */

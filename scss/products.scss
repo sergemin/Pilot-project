@@ -1,0 +1,33 @@
+.topMenu a:nth-child(2) li {
+    background: rgba(255, 255, 255, .2);
+}
+
+.contentAboutCont1 {
+    padding-top: 100px;
+    padding-bottom: 10px;
+    & a {
+        text-decoration: underline;
+    }
+}
+.blockCont2Prod {
+    width: 48%;
+    margin: 5px 1%;
+    margin-top: 15px;
+    float: left;
+    & h1 {
+        font: 1.4em Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    & span {
+        color: #e74c3c;
+    }
+    & p { 
+        line-height: 1.3em;
+    }
+    & img {
+        width: 48%;
+        margin: 0 1%;
+        float: left;
+        max-height: 130px;
+    }
+}
