@@ -30,16 +30,4 @@
     window.addEventListener('resize', function() {
         topMenu.classList.remove('topMenuChanger');
     })
-
-    // Buttons for home page 4th (gallery)
-    var buttonsGallery = document.querySelector('.buttonsOurProj');
-    buttonsGallery.addEventListener('click', function(event) {
-        var target = event.target;
-        
-        while(target != buttonsGallery) { 
-           if (target.tagName == 'IMG') {
-        return;
-            }
-        }
-    });
 })();

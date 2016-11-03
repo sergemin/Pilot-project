@@ -59,11 +59,12 @@
         text-align: center;
         font: 2em OpenSansRegular sans-serif;
     }
-    & div div {
-        width: 23%;
-        float: left;
-        margin-right: 2%;
-    }
+}
+.blockAboutCont3 {
+    width: 23%;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 .wrapBlocksAboutCont3 {
     margin-top: 55px;
@@ -86,6 +87,12 @@
     }
     &>div:last-child {
         margin-top: 35px;
+    }
+    & p, h4 {
+        line-height: 1.2em;
+    }
+    & h4 {
+        color: #e74c3c;
     }
 }
 .buttonsAboutCont4 {
@@ -115,4 +122,58 @@
 }
 .prevCont4About:hover, .nextCont4About:hover  {
     cursor: pointer;
+}
+
+/************media-queries************/
+
+@media only screen and (max-width: 860px) {
+    //container3
+    
+    .blockAboutCont3 {
+        width: 31%;
+        //border: 1px solid #fff;
+        &:last-child {
+            display: none;
+        }
+    }  
+}
+
+@media only screen and (max-width: 640px) {
+    //container2 
+    .block1AboutCont2, .block2AboutCont2 {
+        clear: both;
+        width: 100%;
+        & h3 {
+            text-align: center;
+        }
+        &:last-child {
+            margin-top: 20px;
+        }
+    }
+    .container2 {
+        padding: 30px 0;
+    }
+    
+    //container3
+    
+    .blockAboutCont3 {
+        width: 48%;
+        //border: 1px solid #fff;
+        &:first-child {
+            display: none;
+        }
+    }  
+    
+    //container4
+    
+    .blockContentAboutCont4 {
+        width: 100%;
+        & p {
+            line-height: 1.8em;
+        }
+        &:last-child {
+        display: none;
+        }
+    }
+    
 }

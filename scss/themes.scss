@@ -225,22 +225,21 @@ header {
     header {
         position: relative;
     }
-    .topMenu {
+    .wrapMenu {
         position: absolute;
-        display: none;
         right: 22%;
         top: 30%;
         width: 33%;
+       // border: 1px solid #fff;
+        height: 140px;
+        overflow: hidden;
+    }
+    .topMenu {
+        margin-top: -140px;
         background: rgba(255, 255, 255, .3);
-        -webkit-animation: menuOpen860  1.5s ease-in-out;
-        -o-animation: menuOpen860  1.5s ease-in-out;
-        animation: menuOpen860  1.5s ease-in-out;
-        -webkit-transition: width .6s ease-in-out, 
-                height 1.6s ease-in-out .6s;
-        -o-transition: width .6s ease-in-out, 
-                height 1.6s ease-in-out .6s;
-        transition: width .6s ease-in-out, 
-                height 1.6s ease-in-out .6s;
+        -webkit-transition: all .8s ease-in-out;
+        -o-transition: all .8s ease-in-out;
+        transition: all .8s ease-in-out;
         & li {
             margin-right: 0;
             display: block;
@@ -249,7 +248,7 @@ header {
             }
         }
     .topMenu.topMenuChanger {
-        display: block;
+        margin-top: 0;
     }
     .topMenuShower {
         display: block;
@@ -266,27 +265,27 @@ header {
             transform: scale(1.1);
         }
     }
-    @keyframes menuOpen860 {
-        from {
-            width: 0;
-            height: 0;
-            right: 60%;
-            -webkit-opacity: 0;
-            -moz-opacity: 0;
-            -ms-opacity: 0;
-            -o-opacity: 0;
-            opacity: 0;
-            
-        }
-        to {
-            width: 33%;
-            -webkit-opacity: 1;
-            -moz-opacity: 1;
-            -ms-opacity: 1;
-            -o-opacity: 1;
-            opacity: 1;
-        }
-    }
+//    @keyframes menuOpen860 {
+//        from {
+//            width: 0;
+//            height: 0;
+//            right: 60%;
+//            -webkit-opacity: 0;
+//            -moz-opacity: 0;
+//            -ms-opacity: 0;
+//            -o-opacity: 0;
+//            opacity: 0;
+//            
+//        }
+//        to {
+//            width: 33%;
+//            -webkit-opacity: 1;
+//            -moz-opacity: 1;
+//            -ms-opacity: 1;
+//            -o-opacity: 1;
+//            opacity: 1;
+//        }
+//    }
     
     
     //Container5 
@@ -304,7 +303,6 @@ header {
 @media only screen and (max-width: 640px) {
     //container1 
     header {
-        display: inherit;
         height: 70px;
         position: relative;
     }
@@ -312,8 +310,7 @@ header {
         display: none;
     }
     .topMenuShower {
-        display: inherit;
-        position: inherit;
+        position: absolute;
         height: 100%;
         width: 100%;
         left: 0;
@@ -326,42 +323,50 @@ header {
             line-height: 3.2em;
         }
     }
+    .wrapMenu {
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        //border: 1px solid #fff;
+    }
     .topMenu {
         //overflow: hidden;
-        margin-top: 50px;
+        margin-top: -140px;
         width: 100%;
-        margin-left: 20%;
-        position: absolute;
-        top: 20px;
-        right: 0;
-        -webkit-animation: menuOpen640 1.5s ease-in-out;
-        -o-animation: menuOpen640 1.5s ease-in-out;
-        animation: menuOpen640 1.5s ease-in-out;
+//        -webkit-animation: menuOpen640 1.5s ease-in-out;
+//        -o-animation: menuOpen640 1.5s ease-in-out;
+//        animation: menuOpen640 1.5s ease-in-out;
     }
 }
- @keyframes menuOpen640 {
-        from {
-            width: 0;
-            height: 0;
-           // right: 60%;
-            -webkit-opacity: 0;
-            -moz-opacity: 0;
-            -ms-opacity: 0;
-            -o-opacity: 0;
-            opacity: 0;
-            
-        }
-        to {
-            width: 100%;
-            -webkit-opacity: 1;
-            -moz-opacity: 1;
-            -ms-opacity: 1;
-            -o-opacity: 1;
-            opacity: 1;
-        }
-    }
+// @keyframes menuOpen640 {
+//        from {
+//            width: 0;
+//            height: 0;
+//           // right: 60%;
+//            -webkit-opacity: 0;
+//            -moz-opacity: 0;
+//            -ms-opacity: 0;
+//            -o-opacity: 0;
+//            opacity: 0;
+//            
+//        }
+//        to {
+//            width: 100%;
+//            -webkit-opacity: 1;
+//            -moz-opacity: 1;
+//            -ms-opacity: 1;
+//            -o-opacity: 1;
+//            opacity: 1;
+//        }
+//    }
 
 @media only screen and (max-width: 480px) {
+    //container1 
+    .contentHomeCont1 {
+        height: 900px;
+    }
+    
     //container5 
     
     .blockCont5:first-child {

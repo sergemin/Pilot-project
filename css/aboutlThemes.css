@@ -43,12 +43,10 @@
   .contentAboutCont3 h2 {
     text-align: center;
     font: 2em OpenSansRegular sans-serif; }
-
-.blockAboutCont3 {
-  width: 23%;
-  float: left;
-  margin-right: 1%;
-  margin-left: 1%; }
+  .contentAboutCont3 div div {
+    width: 23%;
+    float: left;
+    margin-right: 2%; }
 
 .wrapBlocksAboutCont3 {
   margin-top: 55px; }
@@ -64,10 +62,6 @@
       float: left; }
   .blockContentAboutCont4 > div:last-child {
     margin-top: 35px; }
-  .blockContentAboutCont4 p, .blockContentAboutCont4 h4 {
-    line-height: 1.2em; }
-  .blockContentAboutCont4 h4 {
-    color: #e74c3c; }
 
 .buttonsAboutCont4 {
   float: right; }
@@ -100,31 +94,10 @@
 /************media-queries************/
 @media only screen and (max-width: 860px) {
   .blockAboutCont3 {
-    width: 31%; }
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%; }
     .blockAboutCont3:last-child {
       display: none; } }
-@media only screen and (max-width: 640px) {
-  .block1AboutCont2, .block2AboutCont2 {
-    clear: both;
-    width: 100%; }
-    .block1AboutCont2 h3, .block2AboutCont2 h3 {
-      text-align: center; }
-    .block1AboutCont2:last-child, .block2AboutCont2:last-child {
-      margin-top: 20px; }
 
-  .container2 {
-    padding: 30px 0; }
-
-  .blockAboutCont3 {
-    width: 48%; }
-    .blockAboutCont3:first-child {
-      display: none; }
-
-  .blockContentAboutCont4 {
-    width: 100%; }
-    .blockContentAboutCont4 p {
-      line-height: 1.8em; }
-    .blockContentAboutCont4:last-child {
-      display: none; } }
-
-/*# sourceMappingURL=aboutThemes.css.map */
+/*# sourceMappingURL=aboutlThemes.css.map */
