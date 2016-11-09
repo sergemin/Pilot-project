@@ -31,48 +31,4 @@
         topMenu.classList.remove('topMenuChanger');
     })
     
-    //gallery container4
-    
-    var margin = 0,
-        differ = 102;
-    
-    var buttonsGallery = document.querySelector('.buttonsOurProj'),
-        prevButton = buttonsGallery.getElementsByTagName('img')[0],
-        nextButton = buttonsGallery.getElementsByTagName('img')[1],
-        widthBlocks = document.querySelector('.blocksForCont4Home');
-    
-    var countBlock = widthBlocks.children.length;
-    var allBlocksWidth = differ / 4 * countBlock;
-   console.log('all photos width = ' + allBlocksWidth + '%');
-    
-   nextButton.addEventListener('click', function() {
-       
-       margin = margin - differ;
-       
-       
-       console.log('there is margin of next = ' + margin + '%');
-       
-       if(margin > - allBlocksWidth) {
-          widthBlocks.style.marginLeft = margin + '%';
-       }
-       if(allBlocksWidth+margin === 76.5) {
-           widthBlocks.style.marginLeft = margin + 25.5 +'%';
-       }
-       if(allBlocksWidth+margin === 51) {
-           widthBlocks.style.marginLeft = margin + 51 +'%';
-       }
-       if(allBlocksWidth+margin === 25.5) {
-           widthBlocks.style.marginLeft = margin + 76.5 +'%';
-       }
-       if(allBlocksWidth + margin <= differ) {
-           margin = differ;
-       }
-   })
-   prevButton.addEventListener('click', function() {
-        console.log('there is margin of prev = ' + margin + '%');
-       if(margin < 0) {
-        margin = margin + differ;
-        widthBlocks.style.marginLeft = margin + '%';
-      }
-   })
 })();

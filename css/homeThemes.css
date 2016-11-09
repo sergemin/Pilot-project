@@ -110,6 +110,13 @@
     text-align: center;
     right: 20%; }
 
+.photoBigger {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  display: none; }
+
 @media only screen and (max-width: 1000px) {
   .contentHomeCont1 button {
     width: 35%; } }
